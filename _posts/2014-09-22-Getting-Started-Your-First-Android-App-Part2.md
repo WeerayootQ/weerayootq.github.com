@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started Your First Android App Part2"
+title: "Getting Started Your First Android App Part 2"
 modified: 2014-09-22 16:44:14 +0700
 tags: [Andriod Development]
 image:
@@ -54,15 +54,62 @@ XML Layout Basic
 ##### ตัวอย่างที่ 1 **layout_alignParentBottom** 
 ![Alt text](../images/android_part2_2.jpg)
 
+จากตัวอย่างข้างต้น การใช้**layout_alignParentBottom** จะมีลักษณะการจัดวางของวิวสำหรับการตั้งค่าให้ชิดขอบของจอภาพด้านบน โดยลักษณะที่เหมือนกันก็คือ จะจัดเรียตามหัวมุมของจอภาพนั่นเอง
+
 ##### ตัวอย่างที่ 2 **layout_toRightOf** 
 ![Alt text](../images/android_part2_3.jpg)
+
+จากตัวอย่างที่ 2 นี้ **layout_toRightOf** จะทำหน้าที่จัดเรียงวิวให้อยู่ทางด้านขวามือของวิวที่มีความสัมพันธ์กัน
 
 ##### ตัวอย่างที่ 3 **layout_alignRight** 
 ![Alt text](../images/android_part2_4.jpg)
 
+You can use layout_alignRight and the analogous attributes to align a side of one View with another.
+จากตัวอย่างที่ 3 **layout_alignRight** จะทำหน้าที่จัดเรียงวิวให้มรการจัดเรียงชิดขอบขวามือของวิวที่มีความสัมพันธ์
+
 ***
 
+### Linear Layouts
 
+นอกจาก **Relative Layouts** แล้วยังมี **Linear Layouts** ให้นักพัฒนาแอพพลิเคชันได้เลือกใช้ในการดีไซน์หน้าตาของแอพพลิเคชันอีกด้วย โดยที่ **Linear Layouts** สามารถเลือกใช้งานได้ในสองลักษณะคือ **Vertical** และ **Horizontal** ซึ่งก็คือแนวตั้งและแนวนอนนั่นเอง ข้อสังเกตุที่สำคัญอีกสิ่งนึงที่ต้องคำนึงในการใช้งาน **Linear Layouts** ก็คือวิวลูกที่อยู่ภายใต้ Layout นี้จะไม่ตอบสนองการ set ค่าของ **layout_toRightOf** แต่จะเือกตอบสนอง **layout_weight** และ **layout_gravity** ความหมายของค่าสองค่านี้สามารถอธิบายได้ดังนี้
+
+ - **layout_weight** ทำหน้าที่เป็นตัวกำหนดน้ำหนักวิวนั้นๆ โดยที่ค่าของน้ำหนักเกิดจากการคำนวณด้วยจำนวนทั้งหมดของวิวลูกที่มีอยูใน **linear layouts** แล้วนำมาเป็นตัวหารให้กับค่าของน้ำหนักของวิวที่เรากำลังจัดวางนั่นเอง ดังภาพตัวอย่างต่อไปนี้
+
+ ![Alt text](../images/android_part2_5.jpg)
+
+ - **layout_gravity** ทำหน้าที่เหมือนเป็นตัวกำหนกให้วิวนั้นๆ แบนไปในด้านต่างๆ ตัวอย่างเช่น กำหนดให้อยู่ทางด้านซ้ายหรือด้านขวาของ **LinearLayout**
+
+ ![Alt text](../images/android_part2_6.jpg)
+
+
+Before you move on to the next section, open res/layout/activity_main.xml and change the root node from a RelativeLayout — what Android Studio gave you as a default — to a LinearLayout.
+To do that, you should replace these lines:
+
+ห่อนที่เราจะมาเริ่มต้นการเขียน **Design** แอพพลิเคชันของเรานั้นให้ เตรียมโครงสร้างไฟล์ **res/layout/activity_my.xml** โดยทำการเปลี่ยน **RelativeLayout** ไปเป็น **LinearLayout** ดังต่อไปนี้
+
+```
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+```
+และ
+
+```
+</RelativeLayout>
+```
+
+สุดท้ายจะได้ผลลัพท์ดังนี้
+
+```
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+</LinearLayout>
+```
+
+### Tobe continue....
 
 [download the JDK]:http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [Android Studio Page]:https://developer.android.com/sdk/installing/studio.html
