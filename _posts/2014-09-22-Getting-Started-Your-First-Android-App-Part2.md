@@ -18,15 +18,6 @@ Getting Start
 
 ***
 
-Task
-=========
-
- - Create application with an image from a PNG file.
- - Create application with an editable text field for writing a message.
- - Create application with a button to submit an input.
-
-***
-
 XML Layout Basic
 =========
 
