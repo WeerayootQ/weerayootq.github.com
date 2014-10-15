@@ -11,10 +11,20 @@ comments:
 share: 
 ---
 
+
+[Resource 1]
+
+[Resource 2]
+
+[Resource 3]
+
+
 Getting Start
 =========
 
 หลังจากที่ได้รักจักกับเครื่องมือในการพัฒนาแอพพลิเคชันสำหรับระบบปฏิบัติการ Android ด้วย Android Studio และการตั้งค่าของตัว Emulator เป็นที่เรียบร้อยใน Part ที่สองนี้เราจะเริ่มทำการพัฒนาต่อยอดจากตัว Project ไฟล์ที่เราได้สร้างไว้ใน Part แรก โดยถ้าเราสังเกตุว่าโครงสร้างของตัว Project นั้นจะถูกจัดวางอย่างเป็นระบบโดยที่เราไม่ต้องเสียเวลาในการวางโครงสร้างของไฟล์ต่างๆ ซึ่งทั้งหมดถูกจัดการโดย Android Studio นั่นเอง
+
+
 
 ***
 
@@ -104,5 +114,7 @@ To do that, you should replace these lines:
 
 [download the JDK]:http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [Android Studio Page]:https://developer.android.com/sdk/installing/studio.html
-[Anddroid Dashboard]:https://developer.android.com/about/dashboards/index.html
+[Resource 1]:../images/ic_books.png
+[Resource 2]:../images/img_books_large.png
+[Resource 3]:../images/img_books_loading.png
 
